@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saru</title>
+    <link rel="shortcut icon" href="../IMG/logo.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/1.css">
+    </head>
+
+<body>
+   
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark " id="navbar">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dog.html">Pics of dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="form.html">Feedback</a>
+                </li>
+    
+            </ul>
+        </div>
+    </nav>
+
+    <!---*****form*********-->
+
+    <div class="feedback container-fluid ">
+        <h1 class = "prompt">Gimme feedback</h1>
+        <h3 class = "prompt">
+            Here's what other judgy people have had to say about me.<br>
+            If you absolutely cannot hold back your inner karen, fill the form below
+        </h3>
+    </div>
+    <div class="form_container">
+        <div class="form">
+        <div class="form-group ">
+            <label for="name">*Your name:</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="skill">Skill</label>
+            <input type="text" class="form-control" id="skill">
+        </div>
+        <div class="form-group">
+            <label for="level">Level</label>
+            <select id="level" name="field" class="form-select form-control">
+                <option value="Proficient">Proficient</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Learning">Learning</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <input type="text" class="form-control" id="comment">
+        </div>
+        
+        <button onclick="formIn()" class="btn btn-default form-btn">Submit</button>
+        </div>
+    </div>
+
+
+        <div class="form-tbl-ctr">
+         <table id ="form_tbl" align ="center" class="form_tbl">
+            <tr>
+                <th class="form-th"> NAME </th>
+                <th class="form-th"> SKILL </th>
+                <th class="form-th"> LEVEL </th>
+                <th class="form-th"> COMMENT </th>
+            </tr> 
+        </table> 
+        </div>
+    
+
+            <!--footer-->
+    <div class="footer container-fluid">
+        <h3>Contact me!</h3>
+            <div class="links">
+                <a href="https://www.facebook.com/saravanan.senthil.399" target=_"blank">
+                    <img class="footer-img"
+                        src="https://www.fontfabric.com/wp-content/themes/ff-wp-templates/assets/images/icons/socials/fb.svg">
+                        </a>
+                <a href="https://www.instagram.com/saru.d2" target=_"blank">
+                   <img class="footer-img"
+                            src="https://www.fontfabric.com/wp-content/themes/ff-wp-templates/assets/images/icons/socials/insta.svg">
+                </a>
+            </div>
+        </div>
+    <button id="toTop" onclick="going_up()">UP!</button>
+    <script src="../JS/up.js"></script>
+    <script src = "../JS/form.js"></script>
+</body>
+</html>
